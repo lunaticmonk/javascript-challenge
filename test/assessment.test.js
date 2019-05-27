@@ -5,7 +5,7 @@ import * as _ from "underscore";
 
 describe("The Assessment", () => {
   let assessment, questions;
-  beforeEach(async () => {
+  beforeAll(async () => {
     assessment = new Assessment();
     await assessment.populateQuestions();
     questions = assessment.questions;
