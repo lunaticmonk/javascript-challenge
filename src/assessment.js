@@ -1,3 +1,4 @@
+import * as _ from "underscore";
 import dimensions from "../src/dimensions";
 
 class Assessment {
@@ -42,7 +43,7 @@ class Assessment {
       }
     }
 
-    return questions;
+    return _.shuffle(questions);
   }
 
   async getFourDistinctRandomNumbers() {
